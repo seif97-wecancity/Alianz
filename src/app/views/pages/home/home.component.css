@@ -1,0 +1,40 @@
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #fff0;
+  opacity: 1;
+}
+.carousel-indicators .active {
+  background-color: white;
+}
+
+#FristName::placeholder {
+  font-size: 13px;
+  font-weight: 400;
+
+}
+
+#FristName {
+  font-size: 30px;
+}
+
+
+
+.textLarge{
+  font-size: 40px!important;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+.textLarge{
+  font-size: 26px!important;
+}
+
+}
+
+

@@ -1,0 +1,98 @@
+<div class="d-flex justify-content-center align-items-md-center align-items-start w-100 vh-100 mainDivLogin"
+  style="background-image: url(./assets/img/background-login.jpg);direction: initial;">
+
+  <div class="row m-0 bg-white rounded p-5" [style.width.px]="480" *ngIf="SineIn">
+    <div class="col-12 pt-3">
+      <img src="./assets/img/allianzlogo.png" [style.height.px]="40" class="mb-1" alt="">
+      <hr class="mt-4">
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="Save()">
+    <div class="col-12 pt-3">
+      <label class="pb-2">Email:</label>
+      <input type="email" class="form-control" placeholder="you@example.com" id="email" formControlName="Email">
+    </div>
+    <div class="col-12 pt-3">
+      <label class="pb-2">Password:</label>
+      <input type="password" class="form-control" placeholder="Enter your password" id="password" formControlName="Password">
+    </div>
+
+    <div class="col-12 d-flex justify-content-center py-2 my-2">
+      <button nxButton="secondary small" type="submit" class="fw-normal px-4 p-2 mx-1" >Sign In</button>
+    </div>
+  </form>
+    <div class="col-12 d-flex justify-content-evenly py-2 mt-2 mb-5 d-none">
+      <button nxButton="secondary danger small" type="button" class="fw-normal px-4 p-2 mx-1">With Journy</button>
+      <button nxButton="secondary danger small" type="button" class="fw-normal px-4 p-2 mx-1">Without Journy</button>
+    </div>
+    <div class="col-12 d-flex justify-content-between py-2 my-2" [style.fontSize.px]="13">
+      <a href="javascript:void(0);" class="text-secondary"> Lost Your Username? </a>
+      <a href="javascript:void(0);" class="text-secondary"> Lost Your Password? </a>
+    </div>
+    <div class="col-12 d-flex align-items-center flex-column py-2 my-2" [style.fontSize.px]="13">
+      <p class="text-secondary mb-0"> By entering the system you confirm that you accept the </p>
+      <a href="javascript:void(0);" class="text-secondary"> Allianz Data Privacy Statement </a>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="row m-0 bg-white rounded p-5" [style.width.px]="780" *ngIf="!SineIn">
+    <div class="col-12 pt-3">
+      <img src="./assets/img/allianzlogo.png" [style.height.px]="40" class="mb-1" alt="">
+      <hr class="mt-4">
+    </div>
+
+    <div class="col-md-6 pt-4">
+      <label class="pb-2">First Name:</label>
+      <input type="text" class="form-control" placeholder="First Name">
+    </div>
+    <div class="col-md-6 pt-4">
+      <label class="pb-2">Last Name:</label>
+      <input type="text" class="form-control" placeholder="Last Name">
+    </div>
+    <div class="col-md-6 pt-4">
+      <label class="pb-2">Email:</label>
+      <input type="email" class="form-control" placeholder="you@example.com">
+    </div>
+    <div class="col-md-6 pt-4">
+      <label class="pb-2">Phone:</label>
+      <input type="email" class="form-control" placeholder="0112345789">
+    </div>
+    <div class="col-md-6 pt-4">
+      <label class="pb-2">Password:</label>
+      <input type="password" class="form-control" placeholder="New password">
+    </div>
+    <div class="col-md-6 pt-4">
+      <label class="pb-2">Re-Password:</label>
+      <input type="password" class="form-control" placeholder="Re-type new password">
+    </div>
+
+    <div class="col-12 d-flex justify-content-evenly pt-4 mt-3">
+      <button nxButton="primary small" type="button" class="fw-normal px-4 p-2 mx-1" style="width: 50%">Sign Up</button>
+    </div>
+    <div class="col-12 d-flex justify-content-evenly py-2 mt-2 mb-3">
+      <button nxButton="secondary danger small" type="button" class="fw-normal px-4 p-2 mx-1">With Journy</button>
+      <button nxButton="secondary danger small" type="button" class="fw-normal px-4 p-2 mx-1">Without Journy</button>
+    </div>
+    <div class="col-12 d-flex justify-content-end py-2 fs-5 my-2">
+      <a href="javascript:void(0);" class="text-secondary" (click)="SineIn = !SineIn"> SineIn</a>
+    </div>
+    <div class="col-12 d-flex align-items-center flex-column py-2 my-2" [style.fontSize.px]="13">
+      <p class="text-secondary mb-0"> By entering the system you confirm that you accept the </p>
+      <a href="javascript:void(0);" class="text-secondary"> Allianz Data Privacy Statement </a>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+</div>

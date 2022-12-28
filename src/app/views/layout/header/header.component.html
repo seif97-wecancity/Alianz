@@ -1,0 +1,41 @@
+<header>
+  <nav class="position-relative bg-white border-bottom" style="z-index: 999">
+    <div class="align-items-center container-fluid d-flex" style="max-width: 1140px">
+      <div>
+        <img routerLink="/" src="./assets/img/allianzlogo.png" [style.height.px]="34" alt="" />
+      </div>
+      <div class="ms-auto d-flex align-items-center my-2 py-1">
+        <button nxButton="secondary small" class="px-3 py-2 mx-3" type="button" (click)="sharedService.logout()">
+          Log
+        </button>
+
+        <button nxButton="secondary small" class="px-3 py-2 mx-3" type="button" (click)="reloadLang()">
+          {{ sharedService.otherLang == "AR" ? "عربي" : sharedService.otherLang }}
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+<div class="bg-white border py-3 px-2 position-fixed rounded d-none d-lg-block" [style.width.px]="90" [style.right.px]="20"
+  [style.top.px]="200" [style.zIndex]="9">
+
+  <a href="mailto:ndbxpl@allianz.com" class="d-flex text-main w-100 flex-column align-items-center text-decoration-none">
+    <div class="iconRelative">
+      <fa-icon icon="envelope" [style.fontSize.px]="24"></fa-icon>
+    </div>
+    <span class="my-2 d-inline-block" [style.fontSize.px]="14">Contact us</span>
+  </a>
+
+  <a href="mailto:ndbxpl@allianz.com" class="d-flex text-main w-100 mt-2 flex-column align-items-center text-decoration-none">
+    <div class="iconRelative" [style.padding]="'7px 15px 3px'">
+      <fa-icon icon="location-dot" [style.fontSize.px]="24"></fa-icon>
+    </div>
+    <span class="my-2 d-inline-block" [style.fontSize.px]="14">Find us</span>
+  </a>
+</div>

@@ -1,0 +1,404 @@
+<app-sub-slider></app-sub-slider>
+
+<div class="container" [style.maxWidth.px]="1140">
+  <div class="row">
+    <app-progres-bar></app-progres-bar>
+  </div>
+
+
+
+
+  <div class="{{langAr ? 'row flex-row-reverse':'row'}} inputENFontSize" [style.fontFamily]="'AllianzNeo'">
+
+    <div class="col-md-4 col-lg-1 mt-5 dir-ltr" [ngClass]="{'inputAR' : langAr}">
+      <nx-formfield>
+        <input nxInput disabled value="" />
+      </nx-formfield>
+    </div>
+
+
+    <div class="col-md-8 col-lg-3 mt-5 dir-ltr" [ngClass]="{'inputAR' : langAr}">
+      <nx-formfield nxLabel="First Name">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+
+    <div class="col-md-4 col-lg-3 mt-5 dir-ltr" [ngClass]="{'inputAR' : langAr}">
+      <nx-formfield nxLabel="Middle Name">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+    <div class="col-md-4 col-lg-3 mt-5 dir-ltr" [ngClass]="{'inputAR' : langAr}">
+      <nx-formfield nxLabel="Last Name">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+    <div class="col-md-4 col-lg-2 mt-5 dir-ltr" [ngClass]="{'inputAR' : langAr}">
+      <nx-formfield nxLabel="Nationality">
+        <input nxInput disabled value="Egyptian" />
+      </nx-formfield>
+    </div>
+
+  </div>
+  <div class="{{langAr ? 'row':'row flex-row-reverse'}} inputARFontSize" [style.fontFamily]="'Almarai'">
+    <div class="col-md-4 col-lg-1 mt-5 dir-rtl" [dir]="!langAr ? 'rtl':'ltr'">
+      <nx-formfield>
+        <input nxInput disabled value="" />
+      </nx-formfield>
+    </div>
+
+
+
+    <div class="col-md-8 col-lg-3 mt-5 dir-rtl" [dir]="!langAr ? 'rtl':'ltr'">
+      <nx-formfield nxLabel="الأسم الاول">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+
+    <div class="col-md-4 col-lg-3 mt-5 dir-rtl" [dir]="!langAr ? 'rtl':'ltr'">
+      <nx-formfield nxLabel="الأسم الاوسط">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+    <div class="col-md-4 col-lg-3 mt-5 dir-rtl" [dir]="!langAr ? 'rtl':'ltr'">
+      <nx-formfield nxLabel="الأسم الاخير">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+    <div class="col-md-4 col-lg-2 mt-5 dir-rtl" [dir]="!langAr ? 'rtl':'ltr'">
+      <nx-formfield nxLabel="الجنسية">
+        <input nxInput disabled value="مصرى" />
+      </nx-formfield>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.gendern' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.gendern' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.dob' | translate}}">
+        <input nxDatefield nxInput [nxDatepicker]="myDatepicker" disabled />
+        <nx-datepicker-toggle [for]="myDatepicker" nxFormfieldSuffix></nx-datepicker-toggle>
+        <nx-datepicker #myDatepicker></nx-datepicker>
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.tel' | translate}}">
+        <input nxInput disabled value="" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.landLine' | translate}}">
+        <input nxInput value="" />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+
+    <div class="col-md-4 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Weight' | translate}}">
+        <input nxInput value="0" />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+    <div class="col-md-4 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Height' | translate}}">
+        <input nxInput value="0" />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.MaritalStatus' | translate}}" class="c-textfield">
+        <nx-dropdown>
+          <nx-dropdown-item nxValue="Male">Male</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">Female</nx-dropdown-item>
+        </nx-dropdown>
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Industry' | translate}}" class="c-textfield">
+        <nx-dropdown>
+          <nx-dropdown-item nxValue="Male">Male</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">Female</nx-dropdown-item>
+        </nx-dropdown>
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Occupation' | translate}}" class="c-textfield">
+        <nx-dropdown>
+          <nx-dropdown-item nxValue="Male">Male</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">Female</nx-dropdown-item>
+        </nx-dropdown>
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+    <!-- <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.togtex' | translate}}
+      </nx-switcher>
+    </div> -->
+
+
+
+
+    <!-- <div class="col-12 mt-5">
+      <nx-formfield nxLabel="{{'translate.addressar' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div> -->
+
+
+
+
+    <div class="col-12 mt-5">
+      <h3>{{'translate.addressar' | translate}}</h3>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.buildingNumber' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-8 mt-5">
+      <nx-formfield nxLabel="{{'translate.street' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Area' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.City' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Governorate' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-12 mt-5">
+      <h3>{{'translate.workAddress' | translate}}</h3>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.buildingNumber' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.street' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Area' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.City' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Governorate' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.workPhoneNumber' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+
+
+
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.same1' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.same2' | translate}}
+      </nx-switcher>
+    </div>
+
+    <div class="col-12 mt-5">
+      <h3>{{'translate.mailAddress' | translate}}</h3>
+    </div>
+
+    <div class="col-md-6 mt-5">
+      <nx-formfield nxLabel="{{'translate.buildingNumber' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-6 mt-5">
+      <nx-formfield nxLabel="{{'translate.street' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Area' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.City' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Governorate' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+
+
+
+
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.salaryRange' | translate}}" class="c-textfield">
+        <nx-dropdown>
+          <nx-dropdown-item nxValue="Male">From 10,000 to 25,000</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">From 25,000 to 50,000</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Male">Less than 1000</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">More than 50,000</nx-dropdown-item>
+        </nx-dropdown>
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.sourceOfIncome' | translate}}" class="c-textfield">
+        <nx-dropdown>
+          <nx-dropdown-item nxValue="Male">Free Business</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">Salary</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Male">Properties</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">Investment</nx-dropdown-item>
+        </nx-dropdown>
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.ontherIncom' | translate}}">
+        <input nxInput />
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="row mt-5">
+    <div class="col-12 mt-5">
+      <div class="row justify-content-center align-items-center mx-0">
+        <button nxButton="emphasis" type="button" [style.backgroundColor]="'#5a3982'" class="order-0 order-md-0 px-5 my-3 p-2 mx-4 w-fit">{{'translate.Back' | translate}}</button>
+        <button nxButton="emphasis" type="button" [style.backgroundColor]="'#5a3982'" class="order-1 order-md-2 px-5 my-3 p-2 mx-4 w-fit">{{'translate.continue' | translate}}</button>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+</div>

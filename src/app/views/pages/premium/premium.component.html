@@ -1,0 +1,68 @@
+<app-sub-slider></app-sub-slider>
+
+<div class="container" [style.maxWidth.px]="1140">
+  <div class="row">
+    <app-progres-bar></app-progres-bar>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.phone' | translate}}">
+        <input nxInput disabled />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.RegularPremium' | translate}}">
+        <input nxInput disabled value="0.00" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Propstamp' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Superfees' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Reviewing' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.fundFee' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.TotalPremium' | translate}}">
+        <input nxInput disabled value="0.00" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.DimFees' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.IssFees' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Firstpremium' | translate}}">
+        <input nxInput disabled value="0.00" />
+      </nx-formfield>
+    </div>
+
+
+
+    <div class="col-12">
+
+      <div class="row justify-content-center align-items-center mx-0">
+        <button nxButton="primary" [style.backgroundColor]="'#48bbbc'" type="button" class="order-0 order-md-0 px-5 my-3 p-2 mx-4 w-fit">{{'translate.Back' | translate}}</button>
+        <button nxButton="primary" [style.backgroundColor]="'#48bbbc'" type="button" class="order-1 order-md-2 px-5 my-3 p-2 mx-4 w-fit">{{'translate.continue' | translate}}</button>
+      </div>
+
+    </div>
+  </div>
+</div>

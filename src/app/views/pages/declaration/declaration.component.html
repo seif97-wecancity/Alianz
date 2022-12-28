@@ -1,0 +1,73 @@
+<app-sub-slider></app-sub-slider>
+
+<div class="container" [style.maxWidth.px]="1140">
+  <div class="row">
+    <app-progres-bar></app-progres-bar>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.Term1' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.Term2' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.Term3' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.Term4' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.Term5' | translate}}<br>
+        {{'translate.Term5_2' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5" style="font-size: 20px;">
+
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.Term6' | translate}}
+      </nx-switcher>
+      <input type="radio" id="mail" name="fav_language" />
+      <label class="mx-2" for="mail">{{'translate.mail' | translate}}</label><br>
+      <input type="radio" id="sms" name="fav_language">
+      <label class="mx-2" for="sms">{{'translate.sms' | translate}}</label><br>
+    </div>
+    <div class="col-12 mt-5" style="font-size: 20px;">
+      <p>{{'translate.TermP' | translate}}</p>
+    </div>
+
+
+
+    <div class="col-12 mt-5">
+
+      <div class="row justify-content-center align-items-center mx-0">
+        <button nxButton="cta" type="button" class="order-2 order-md-1 px-5 my-3 p-2 mx-4 w-fit">
+          {{'translate.IDcopy' | translate}}
+        </button>
+
+      </div>
+      <div class="mt-0">
+        <p class="text-danger fs-6 text-center" style="margin: -12px 0 0 0;" *ngIf="true">{{'translate.IDcopyValidate' | translate}}</p>
+      </div>
+    </div>
+    <div class="col-12 mt-3">
+
+      <div class="row justify-content-center align-items-center mx-0">
+        <button nxButton="cta" type="button" class="order-0 order-md-0 px-5 my-3 p-2 mx-4 w-fit">{{'translate.Back' | translate}}</button>
+        <button nxButton="cta" type="button" class="order-1 order-md-2 px-5 my-3 p-2 mx-4 w-fit">{{'translate.continue' | translate}}</button>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+</div>

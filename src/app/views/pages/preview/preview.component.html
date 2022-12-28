@@ -1,0 +1,541 @@
+<app-sub-slider></app-sub-slider>
+<div class="container" [style.maxWidth.px]="1140">
+  <div class="row">
+    <app-progres-bar></app-progres-bar>
+  </div>
+  <div class="{{langAr ? 'row flex-row-reverse':'row'}} inputENFontSize" [style.fontFamily]="'AllianzNeo'">
+
+
+    <div class="col-md-8 col-lg-3 mt-5 dir-ltr" [ngClass]="{'inputAR' : langAr}">
+      <nx-formfield nxLabel="First Name">
+        <input nxInput disabled value="First Name" />
+      </nx-formfield>
+    </div>
+
+
+
+    <div class="col-md-4 col-lg-3 mt-5 dir-ltr" [ngClass]="{'inputAR' : langAr}">
+      <nx-formfield nxLabel="Middle Name">
+        <input nxInput disabled value="Name" />
+      </nx-formfield>
+    </div>
+
+
+    <div class="col-md-4 col-lg-3 mt-5 dir-ltr" [ngClass]="{'inputAR' : langAr}">
+      <nx-formfield nxLabel="Last Name">
+        <input nxInput disabled value="Name" />
+      </nx-formfield>
+    </div>
+
+
+    <div class="col-md-4 col-lg-3 mt-5 dir-ltr" [ngClass]="{'inputAR' : langAr}">
+      <nx-formfield nxLabel="Nationality">
+        <input nxInput disabled value="Egyption" />
+      </nx-formfield>
+    </div>
+
+  </div>
+  <div class="{{langAr ? 'row':'row flex-row-reverse'}} inputARFontSize" [style.fontFamily]="'Almarai'">
+
+    <div class="col-md-8 col-lg-3 mt-5 dir-rtl" [dir]="!langAr ? 'rtl':'ltr'">
+      <nx-formfield nxLabel="الأسم الاول">
+        <input nxInput nxInput disabled value="الأسم" />
+      </nx-formfield>
+    </div>
+
+
+
+    <div class="col-md-4 col-lg-3 mt-5 dir-rtl" [dir]="!langAr ? 'rtl':'ltr'">
+      <nx-formfield nxLabel="الأسم الاوسط">
+        <input nxInput nxInput disabled value="الأسم" />
+      </nx-formfield>
+    </div>
+
+
+    <div class="col-md-4 col-lg-3 mt-5 dir-rtl" [dir]="!langAr ? 'rtl':'ltr'">
+      <nx-formfield nxLabel="الأسم الاخير">
+        <input nxInput nxInput disabled value="الأسم" />
+      </nx-formfield>
+    </div>
+
+
+    <div class="col-md-4 col-lg-3 mt-5 dir-rtl" [dir]="!langAr ? 'rtl':'ltr'">
+      <nx-formfield nxLabel="الجنسية">
+        <input nxInput disabled value="مصرى" />
+      </nx-formfield>
+    </div>
+
+  </div>
+  <div class="row">
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.gendern' | translate}}" class="c-textfield">
+        <input nxInput disabled value=" {{'translate.gendern' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.dob' | translate}}">
+        <input nxInput disabled value="10/10/2020" />
+      </nx-formfield>
+    </div>
+
+
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.tel' | translate}}">
+        <input nxInput disabled value="01234567890" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.landLine' | translate}}">
+        <input nxInput disabled value="0235467890" />
+      </nx-formfield>
+    </div>
+
+
+
+    <div class="col-md-4 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Weight' | translate}}">
+        <input nxInput disabled value="80" />
+      </nx-formfield>
+    </div>
+
+
+    <div class="col-md-4 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Height' | translate}}">
+        <input nxInput disabled value="180" />
+      </nx-formfield>
+    </div>
+
+
+
+
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.MaritalStatus' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.MaritalStatus' | translate}}" />
+      </nx-formfield>
+
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Industry' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.Industry' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Occupation' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.Occupation' | translate}}" />
+      </nx-formfield>
+    </div>
+
+
+    <!-- <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.togtex' | translate}}
+      </nx-switcher>
+    </div> -->
+
+
+
+
+    <div class="col-12 mt-5">
+      <nx-formfield nxLabel="{{'translate.addressar' | translate}}">
+        <input nxInput disabled value="{{'translate.addressar' | translate}}" />
+      </nx-formfield>
+    </div>
+
+
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.buildingNumber' | translate}}">
+        <input nxInput disabled value="{{'translate.buildingNumber' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-8 mt-5">
+      <nx-formfield nxLabel="{{'translate.street' | translate}}">
+        <input nxInput disabled value="{{'translate.street' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.Area' | translate}}">
+        <input nxInput disabled value="{{'translate.Area' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.cityOrGovernorate' | translate}}">
+        <input nxInput disabled value="{{'translate.cityOrGovernorate' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.workPhoneNumber' | translate}}">
+        <input nxInput disabled value="{{'translate.workPhoneNumber' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-12 mt-5">
+      <nx-formfield nxLabel="{{'translate.mailAddress' | translate}}">
+        <input nxInput disabled value="{{'translate.mailAddress' | translate}}" />
+      </nx-formfield>
+    </div>
+
+
+    <div class="col-md-6 mt-5">
+      <nx-formfield nxLabel="{{'translate.buildingNumber' | translate}}">
+        <input nxInput disabled value="{{'translate.buildingNumber' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-6 mt-5">
+      <nx-formfield nxLabel="{{'translate.street' | translate}}">
+        <input nxInput disabled value="{{'translate.street' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-6 mt-5">
+      <nx-formfield nxLabel="{{'translate.Area' | translate}}">
+        <input nxInput disabled value="{{'translate.Area' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-6 mt-5">
+      <nx-formfield nxLabel="{{'translate.cityOrGovernorate' | translate}}">
+        <input nxInput disabled value="{{'translate.cityOrGovernorate' | translate}}" />
+      </nx-formfield>
+    </div>
+
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.salaryRange' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.salaryRange' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.sourceOfIncome' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.sourceOfIncome' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.ontherIncom' | translate}}">
+        <input nxInput disabled value="{{'translate.sourceOfIncome' | translate}}" />
+      </nx-formfield>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.uw1Line1' | translate}}<br>
+        {{'translate.uw1Line2' | translate}}
+      </nx-switcher>
+
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.uw2' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.uw3' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <div class="row">
+        <div class="col-12">
+          <nx-switcher [nxBig]="true" [checked]="false" disabled>
+            {{'translate.uw4' | translate}}
+          </nx-switcher>
+        </div>
+        <div class="col-12 mt-3">
+          <nx-switcher [nxBig]="true" [checked]="false" disabled>
+            {{'translate.uw4_2' | translate}}
+          </nx-switcher>
+        </div>
+        <div class="col-12  mt-3">
+          <nx-formfield nxLabel="{{'translate.uw4i' | translate}}">
+            <input nxInput disabled />
+          </nx-formfield>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 mt-5">
+      <div class="row">
+        <div class="col-12 col-md-3 col-xl-2 my-2">
+          <div class="font-size color-disable">{{'translate.uw5' | translate}}</div>
+        </div>
+        <div class="col-12 col-md-5 col-xl-5 my-2">
+          <nx-formfield nxLabel="{{'translate.uw5From' | translate}}">
+            <input nxInput disabled value="20/10/2022" />
+          </nx-formfield>
+
+        </div>
+        <div class="col-12 col-md-4 col-xl-5 my-2">
+          <nx-formfield nxLabel="{{'translate.uw5To' | translate}}">
+            <input nxInput disabled value="20/10/2022" />
+          </nx-formfield>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.uw6' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.uw7' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.uw8' | translate}}
+      </nx-switcher>
+    </div>
+
+  </div>
+  
+  
+
+
+  <div class="row">
+
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.medical1' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.medical2' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.medical3' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.medical4' | translate}}
+      </nx-switcher>
+      <div class="row">
+        <div class="col-md-4 mt-5">
+            <nx-formfield nxLabel="{{'translate.indicateMonth' | translate}}" class="c-textfield">
+              <input nxInput disabled value="7" />
+            </nx-formfield>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false"  disabled>
+        {{'translate.medical5' | translate}}
+      </nx-switcher>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.Term1' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.Term2' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.Term3' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.Term4' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.Term5' | translate}}<br>
+        {{'translate.Term5_2' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5" style="font-size: 20px;">
+
+      <nx-switcher [nxBig]="true" [checked]="false" disabled>
+        {{'translate.Term6' | translate}}
+      </nx-switcher>
+      <input type="radio" id="mail" name="fav_language" [checked]="true"/>
+      <label class="mx-2 color-disable" for="mail">{{'translate.mail' | translate}}</label><br>
+    </div>
+  </div>
+
+  
+
+
+
+  <div class="row">
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.plan' | translate}}">
+        <input nxInput disabled value="DTL" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.curruncy' | translate}}">
+        <input nxInput disabled value="{{'translate.pound' | translate}}" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.SumAssured' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.SumAssured' | translate}}" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.PolicyDuration' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.PolicyDuration' | translate}}" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Frequency' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.Frequency' | translate}}" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.BeneficiariesLab' | translate}}">
+        <input nxInput disabled value="{{'translate.Beneficiaries' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Occupation' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.Occupation' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.paymentMethod' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.paymentMethod' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.phone' | translate}}">
+        <input nxInput disabled />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.RegularPremium' | translate}}">
+        <input nxInput disabled value="0.00" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Propstamp' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Superfees' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Reviewing' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.fundFee' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.TotalPremium' | translate}}">
+        <input nxInput disabled value="0.00" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.DimFees' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.IssFees' | translate}}">
+        <input nxInput disabled value="0.00EGY" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Firstpremium' | translate}}">
+        <input nxInput disabled value="0.00" />
+      </nx-formfield>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.cardType' | translate}}" class="c-textfield">
+        <input nxInput disabled value=" {{'translate.cardType' | translate}}" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.bankName' | translate}}" class="c-textfield">
+        <input nxInput disabled value=" {{'translate.bankName' | translate}}" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-4 mt-5">
+      <nx-formfield nxLabel="{{'translate.branchName' | translate}}" class="c-textfield">
+        <input nxInput disabled value=" {{'translate.branchName' | translate}}" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.cardNumber' | translate}}">
+        <input nxInput disabled value=" {{'translate.cardNumber' | translate}}" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.cardHolderName' | translate}}">
+        <input nxInput disabled value=" {{'translate.cardHolderName' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.cardExpiryDate' | translate}}">
+        <input nxInput disabled value=" {{'translate.cardExpiryDate' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.accountCurrency' | translate}}" class="c-textfield">
+        <input nxInput disabled value=" {{'translate.accountCurrency' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-12">
+
+      <div class="row justify-content-center align-items-center mx-0">
+        <button nxButton="primary" [style.backgroundColor]="'#48bbbc'" type="button" class="order-0 order-md-0 px-5 my-3 p-2 mx-4 w-fit">{{'translate.printOffer' | translate}}</button>
+        <button nxButton="primary" [style.backgroundColor]="'#48bbbc'" type="button" class="order-1 order-md-2 px-5 my-3 p-2 mx-4 w-fit">{{'translate.acceptOffer' | translate}}</button>
+        <button nxButton="primary" [style.backgroundColor]="'#48bbbc'" type="button" class="order-1 order-md-2 px-5 my-3 p-2 mx-4 w-fit">{{'translate.rejectOffer' | translate}}</button>
+      </div>
+      <div class="row justify-content-center align-items-center mx-0">
+        <button nxButton="primary" [style.backgroundColor]="'#48bbbc'" type="button" class="order-0 order-md-0 px-5 my-3 p-2 mx-4 w-fit">{{'translate.Back' | translate}}</button>
+      </div>
+
+    </div>
+  </div>
+</div>

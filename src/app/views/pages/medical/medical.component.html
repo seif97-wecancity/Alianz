@@ -1,0 +1,54 @@
+<app-sub-slider></app-sub-slider>
+
+<div class="container" [style.maxWidth.px]="1140">
+  <div class="row">
+    <app-progres-bar></app-progres-bar>
+    
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.medical1' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.medical2' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.medical3' | translate}}
+      </nx-switcher>
+    </div>
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.medical4' | translate}}
+      </nx-switcher>
+      <div class="row">
+        <div class="col-md-4 mt-5">
+          <nx-formfield nxLabel="{{'translate.indicateMonth' | translate}}" class="c-textfield">
+            <nx-dropdown>
+              <nx-dropdown-item [nxValue]="month" *ngFor="let month of months">{{month}}</nx-dropdown-item>
+            </nx-dropdown>
+          </nx-formfield>
+          <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 mt-5">
+      <nx-switcher [nxBig]="true" [checked]="false">
+        {{'translate.medical5' | translate}}
+      </nx-switcher>
+    </div>
+
+    <div class="col-12">
+
+      <div class="row justify-content-center align-items-center mx-0">
+        <button nxButton="primary" type="button" class="order-0 order-md-0 px-5 my-3 p-2 mx-4 w-fit">{{'translate.Back' | translate}}</button>
+        <button nxButton="primary" type="button" class="order-1 order-md-2 px-5 my-3 p-2 mx-4 w-fit">{{'translate.continue' | translate}}</button>
+      </div>
+
+    </div>
+  </div>
+</div>

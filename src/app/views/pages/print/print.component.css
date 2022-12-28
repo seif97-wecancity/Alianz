@@ -1,0 +1,61 @@
+.parent-label {
+  text-align: end;
+  flex:1;
+  padding: 10px;
+}
+
+.parent-value {
+  text-align: start;
+  flex:1;
+  padding: 10px;
+}
+
+.span-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.span-value {
+  font-size: 20px;
+  color: black;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.category {
+  border: 1px solid #bfbbbb;
+  margin: 28px 0;
+  padding: 10px 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.category h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e7e7e7;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+
+
+.d-flex-flex-1{
+  display: flex;
+  flex: 1;
+}
+.flex-1{
+  flex: 1;
+}

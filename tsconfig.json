@@ -1,0 +1,52 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "src",
+    "noPropertyAccessFromIndexSignature": false,
+    "paths": {
+      "@modules/*": [
+        "app/views/pages/auth/*",
+        "app/views/layout/*",
+        "app/views/pages/home/*",
+        "app/views/pages/offer/*",
+        "app/views/pages/personal/*",
+        "app/views/pages/sorry/*",
+        "app/views/pages/sorry2/*",
+        "app/views/pages/medical/*",
+        "app/views/pages/declaration/*",
+        "app/views/pages/u-w/*",
+        "app/views/pages/premium/*",
+        "app/views/pages/policy-conditions/*",
+        "app/views/pages/payment/*",
+        "app/views/pages/preview/*",
+        "app/views/pages/policy/*",
+        "app/views/pages/print/*",
+        "app/views/pages/sign/*",
+        "app/core/shared/*"
+      ],
+      "@env/*": ["environments/*"]
+    },
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "es2020",
+    "lib": ["es2020", "dom"]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

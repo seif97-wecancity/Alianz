@@ -1,0 +1,32 @@
+.facecook {
+  width: 27px;
+  padding: 3px 3px 0 10px;
+  border-radius: 2px;
+  background-color: #3b5998;
+}
+
+.instagram {
+  width: 26px;
+}
+
+.linkedIn{
+  width: 27px;
+  padding: 1px 4px;
+  border-radius: 2px;
+  background-color: #0077b5;
+}
+.messenger{
+  width: 26px;
+}
+.youtube{
+  width: 26px;
+}
+
+.footerImg{
+  width: fit-content;
+  margin: auto;
+  margin-top: 24px;
+  padding: 0 60px;
+  background-color: whitesmoke;
+  border-radius: 16px;
+}

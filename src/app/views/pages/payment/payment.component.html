@@ -1,0 +1,88 @@
+<app-sub-slider></app-sub-slider>
+
+<div class="container" [style.maxWidth.px]="1140">
+    <div class="row">
+        <app-progres-bar></app-progres-bar>
+
+        <div class="col-md-4 mt-5">
+            <nx-formfield nxLabel="{{'translate.cardType' | translate}}" class="c-textfield">
+                <nx-dropdown>
+                    <nx-dropdown-item nxValue="Male">{{'translate.debit' | translate}}</nx-dropdown-item>
+                    <nx-dropdown-item nxValue="Female">{{'translate.credit' | translate}}</nx-dropdown-item>
+                </nx-dropdown>
+            </nx-formfield>
+            <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+
+        </div>
+        <div class="col-md-4 mt-5">
+            <nx-formfield nxLabel="{{'translate.bankName' | translate}}" class="c-textfield">
+                <nx-dropdown>
+                    <nx-dropdown-item nxValue="Male">{{'translate.bank1' | translate}}</nx-dropdown-item>
+                    <nx-dropdown-item nxValue="Female">{{'translate.bank2' | translate}}</nx-dropdown-item>
+                </nx-dropdown>
+            </nx-formfield>
+            <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+
+        </div>
+        <div class="col-md-4 mt-5">
+            <nx-formfield nxLabel="{{'translate.branchName' | translate}}" class="c-textfield">
+                <nx-dropdown>
+                    <nx-dropdown-item nxValue="Male">{{'translate.branch1' | translate}}</nx-dropdown-item>
+                    <nx-dropdown-item nxValue="Female">{{'translate.branch2' | translate}}</nx-dropdown-item>
+                </nx-dropdown>
+            </nx-formfield>
+            <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+
+        </div>
+        <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+            <nx-formfield nxLabel="{{'translate.cardNumber' | translate}}">
+                <input nxInput />
+            </nx-formfield>
+            <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+        </div>
+        <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+            <nx-formfield nxLabel="{{'translate.cardHolderName' | translate}}">
+                <input nxInput />
+            </nx-formfield>
+            <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+        </div>
+
+        <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+            <nx-formfield nxLabel="{{'translate.cardExpiryDate' | translate}}">
+                <input nxDatefield nxInput [nxDatepicker]="myDatepicker" />
+
+                <nx-datepicker-toggle [for]="myDatepicker" nxFormfieldSuffix></nx-datepicker-toggle>
+                <nx-datepicker #myDatepicker></nx-datepicker>
+            </nx-formfield>
+            <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+        </div>
+
+        <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+            <nx-formfield nxLabel="{{'translate.accountCurrency' | translate}}" class="c-textfield">
+                <nx-dropdown>
+                    <nx-dropdown-item nxValue="Male">{{'translate.currency1' | translate}}</nx-dropdown-item>
+                    <nx-dropdown-item nxValue="Female">{{'translate.currency1' | translate}}</nx-dropdown-item>
+                </nx-dropdown>
+            </nx-formfield>
+            <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+        </div>
+
+        <!-- <div class="col-12 mt-5">
+
+            <div class="row justify-content-center align-items-center mx-0">
+                <button nxButton="cta" type="button" class="order-2 order-md-1 px-5 my-3 p-2 mx-4 w-fit" [style.backgroundColor]="'#48bbbc'">
+                   {{'translate.IDcopy' | translate}}
+                </button>
+            </div>
+
+        </div> -->
+        <div class="col-12">
+
+            <div class="row justify-content-center align-items-center mx-0">
+                <button nxButton="primary" [style.backgroundColor]="'#48bbbc'" type="button" class="order-0 order-md-0 px-5 my-3 p-2 mx-4 w-fit">{{'translate.Back' | translate}}</button>
+                <button nxButton="primary" [style.backgroundColor]="'#48bbbc'" type="button" class="order-1 order-md-2 px-5 my-3 p-2 mx-4 w-fit">{{'translate.continue' | translate}}</button>
+            </div>
+
+        </div>
+    </div>
+</div>

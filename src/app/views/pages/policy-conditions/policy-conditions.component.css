@@ -1,0 +1,10 @@
+.table {
+    border: 1px solid #e7e7e7;
+}
+.table td {
+    border-left: 1px solid #e7e7e7;
+}
+
+.list-style-none {
+    list-style: none;
+}

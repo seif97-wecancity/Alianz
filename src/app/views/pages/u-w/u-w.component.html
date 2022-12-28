@@ -1,0 +1,94 @@
+<app-sub-slider></app-sub-slider>
+
+<div class="container" [style.maxWidth.px]="1140">
+    <div class="row">
+        <app-progres-bar></app-progres-bar>
+        <div class="col-12 mt-5">
+            <nx-switcher [nxBig]="true" [checked]="false">
+                {{'translate.uw1Line1' | translate}}<br>
+                {{'translate.uw1Line2' | translate}}
+            </nx-switcher>
+
+        </div>
+        <div class="col-12 mt-5">
+            <nx-switcher [nxBig]="true" [checked]="false">
+                {{'translate.uw2' | translate}}
+            </nx-switcher>
+        </div>
+        <div class="col-12 mt-5">
+            <nx-switcher [nxBig]="true" [checked]="false">
+                {{'translate.uw3' | translate}}
+            </nx-switcher>
+        </div>
+        <div class="col-12 mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <nx-switcher [nxBig]="true" [checked]="false">
+                        {{'translate.uw4' | translate}}
+                    </nx-switcher>
+                </div>
+                <div class="col-12 mt-3">
+                    <nx-switcher [nxBig]="true" [checked]="false">
+                        {{'translate.uw4_2' | translate}}
+                    </nx-switcher>
+                </div>
+                <div class="col-12  mt-3">
+                    <nx-formfield nxLabel="{{'translate.uw4i' | translate}}">
+                        <input nxInput />
+                    </nx-formfield>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-5">
+            <div class="row">
+                <div class="col-12 col-md-3 col-xl-2 my-2">
+                    <div class="font-size">{{'translate.uw5' | translate}}</div>
+                </div>
+                <div class="col-12 col-md-5 col-xl-5 my-2">
+                    <nx-formfield nxLabel="{{'translate.uw5From' | translate}}">
+                        <input nxDatefield nxInput [nxDatepicker]="myDatepicker" />
+                        <nx-datepicker-toggle [for]="myDatepicker" nxFormfieldSuffix></nx-datepicker-toggle>
+                        <nx-datepicker #myDatepicker></nx-datepicker>
+                    </nx-formfield>
+                </div>
+                <div class="col-12 col-md-4 col-xl-5 my-2">
+                    <nx-formfield nxLabel="{{'translate.uw5To' | translate}}">
+                        <input nxDatefield nxInput [nxDatepicker]="myDatepicker" />
+                        <nx-datepicker-toggle [for]="myDatepicker" nxFormfieldSuffix></nx-datepicker-toggle>
+                        <nx-datepicker #myDatepicker></nx-datepicker>
+                    </nx-formfield>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-12 mt-5">
+            <nx-switcher [nxBig]="true" [checked]="false">
+                {{'translate.uw6' | translate}}
+            </nx-switcher>
+        </div>
+        <div class="col-12 mt-5">
+            <nx-switcher [nxBig]="true" [checked]="false">
+                {{'translate.uw7' | translate}}
+            </nx-switcher>
+        </div>
+        <div class="col-12 mt-5">
+            <nx-switcher [nxBig]="true" [checked]="false">
+                {{'translate.uw8' | translate}}
+            </nx-switcher>
+        </div>
+
+        <div class="col-12 mt-3">
+
+            <div class="row justify-content-center align-items-center mx-0">
+                <button nxButton="primary" type="button" class="order-0 order-md-0 px-5 my-3 p-2 mx-4 w-fit">{{'translate.Back' | translate}}</button>
+                <button nxButton="primary" type="button" class="order-1 order-md-2 px-5 my-3 p-2 mx-4 w-fit">{{'translate.continue' | translate}}</button>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</div>

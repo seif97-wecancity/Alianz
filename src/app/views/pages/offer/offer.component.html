@@ -1,0 +1,121 @@
+<app-sub-slider></app-sub-slider>
+
+<div class="container px-4" [style.maxWidth.px]="1140">
+  <div class="row">
+    <app-progres-bar></app-progres-bar>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.plan' | translate}}">
+        <input nxInput disabled value="DTL" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.curruncy' | translate}}">
+        <input nxInput disabled value="{{'translate.pound' | translate}}" />
+      </nx-formfield>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.SumAssured' | translate}}" class="c-textfield">
+        <nx-dropdown>
+          <nx-dropdown-item nxValue="Male">Male</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">Female</nx-dropdown-item>
+        </nx-dropdown>
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.PolicyDuration' | translate}}" class="c-textfield">
+        <nx-dropdown>
+          <nx-dropdown-item nxValue="Male">Male</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">Female</nx-dropdown-item>
+        </nx-dropdown>
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Frequency' | translate}}" class="c-textfield">
+        <nx-dropdown>
+          <nx-dropdown-item nxValue="Male">Male</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">Female</nx-dropdown-item>
+        </nx-dropdown>
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.BeneficiariesLab' | translate}}">
+        <input nxInput disabled value="{{'translate.Beneficiaries' | translate}}" />
+      </nx-formfield>
+    </div>
+
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.Occupation' | translate}}" class="c-textfield">
+        <input nxInput disabled value="{{'translate.Occupation' | translate}}" />
+      </nx-formfield>
+      
+    </div>
+
+    <div class="col-md-6 mt-5" [ngClass]="{'inputAROffer' : langAr}">
+      <nx-formfield nxLabel="{{'translate.paymentMethod' | translate}}" class="c-textfield">
+        <nx-dropdown>
+          <nx-dropdown-item nxValue="Male">{{'translate.paymentMethod1' | translate}}</nx-dropdown-item>
+          <nx-dropdown-item nxValue="Female">{{'translate.paymentMethod2' | translate}}</nx-dropdown-item>
+        </nx-dropdown>
+      </nx-formfield>
+      <p class="text-danger fs-6 m-0 mt-1" *ngIf="true">*</p>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="row mt-5 px-3 text-white" [style.backgroundColor]="sharedService.textSubSlideColor">
+    <div class="bg-white" [style.height.px]="20" [style.borderRadius]="'0 0 20px 20px'"> </div>
+
+
+
+
+
+    <div class="col mt-4 mb-2">
+      <label [style.fontSize.px]="12" class="w-100">{{'translate.RegularPremium' | translate}}</label>
+      <span [style.fontSize.px]="30" [style.marginTop.px]="-8" class="d-block">0.00 <span [style.fontSize.px]="14">{{'translate.pound' | translate}}</span></span>
+    </div>
+
+    <div class="col mt-4 mb-2">
+      <label [style.fontSize.px]="12" class="w-100">{{'translate.TotalPremium' | translate}}</label>
+      <span [style.fontSize.px]="30" [style.marginTop.px]="-8" class="d-block">0.00 <span [style.fontSize.px]="14">{{'translate.pound' | translate}}</span></span>
+    </div>
+
+    <div class="col mt-4 mb-2">
+      <label [style.fontSize.px]="12" class="w-100">{{'translate.Firstpremium' | translate}}</label>
+      <span [style.fontSize.px]="30" [style.marginTop.px]="-8" class="d-block">0.00 <span [style.fontSize.px]="14">{{'translate.pound' | translate}}</span></span>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="col-12 mt-5">
+      <div class="row justify-content-center align-items-center mx-0">
+        <button nxButton="emphasis" type="button" class="order-0 order-md-0 px-5 my-3 p-2 mx-4 w-fit">{{'translate.Back' | translate}}</button>
+        <button nxButton="emphasis" type="button" class="order-0 order-md-0 px-5 my-3 p-2 mx-4 w-fit">{{'translate.SendQuote' | translate}}</button>
+        <button nxButton="emphasis" type="button" class="order-1 order-md-2 px-5 my-3 p-2 mx-4 w-fit">{{'translate.continue' | translate}}</button>
+      </div>
+    </div>
+  </div>
+</div>

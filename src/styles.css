@@ -1,0 +1,444 @@
+@font-face {
+  font-family: AllianzNeo;
+  src: url(assets/font/allianz-neo/AllianzNeoW04-Regular.woff);
+}
+
+@font-face {
+  font-family: Almarai;
+  src: url(assets/font/Almarai/Almarai-Regular.ttf);
+}
+
+:root {
+  --text-color: #414141;
+  --main-color: #007ab3;
+  --main-color-rgb: 0, 122, 179;
+  --card-border: 1px solid #ddd;
+  --datefield-controls-color: white;
+}
+
+html[dir="rtl"] body {
+  color: var(--text-color) !important;
+  font-family: Almarai, sans-serif !important;
+  /* font-size: 30px; */
+}
+
+html[dir="ltr"] body {
+  color: var(--text-color) !important;
+  font-family: AllianzNeo !important;
+}
+
+html[dir="rtl"] body .textLarge {
+  font-size: 30px !important;
+}
+
+
+nx-switcher .nx-switcher__label {
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nx-switcher .nx-switcher__label {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+nx-switcher .nx-switcher__toggle {
+  margin: 0 70px !important;
+}
+
+nx-dropdown svg {
+  width: 1.5em !important;
+  height: 1.5em !important;
+  fill: var(--text-color) !important;
+}
+
+
+nx-icon[name="calendar"] svg {
+  fill: var(--text-color) !important;
+}
+
+.nx-formfield {
+  color: #000 !important;
+}
+
+.nx-formfield:hover,
+.nx-formfield:active,
+.nx-formfield:focus {
+  color: var(--primary-color) !important;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.cdk-visually-hidden {
+  display: none !important;
+}
+
+.cdk-overlay-connected-position-bounding-box {
+  position: fixed;
+}
+
+.cdk-overlay-pane {
+  position: absolute !important;
+  transform: translateY(-24px) !important;
+}
+
+.c-input {
+  font-weight: 400 !important;
+  color: var(--main-color) !important;
+  font-size: 22px !important;
+  line-height: 1.5 !important;
+}
+
+.inputARFontSize .c-input {
+  font-size: 20px !important;
+}
+
+.inputENFontSize .c-input {
+  font-weight: 400 !important;
+  color: var(--main-color) !important;
+  font-size: 30px !important;
+  line-height: 1.5 !important;
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+.dir-ltr {
+  direction: ltr;
+}
+
+.inputAR input, .inputAR .nx-formfield__label {
+  text-align: start;
+}
+
+.nx-dropdown-results__option {
+  padding-bottom: 16px !important;
+}
+
+.ErrorMsg {
+  color: red;
+  font-size: 14px !important;
+}
+
+
+
+
+
+
+
+
+/*
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ */
+/* You can add global styles to this file, and also import other style files */
+
+
+
+
+
+.c-natural-language-form .c-natural-language-form__form-body__label {
+  display: inline;
+  vertical-align: baseline;
+  margin: 0 4px 0 0;
+  font-size: 26px;
+  line-height: 60px;
+  font-weight: 300;
+  letter-spacing: .3px;
+}
+
+.c-natural-language-form .c-natural-language-form__form-body__label.en {
+  font-size: 40px;
+}
+
+.c-natural-language-form .c-natural-language-form__form-body__label.ar {
+  font-size: 30px;
+}
+
+.nx-dropdown__filter,
+.nx-dropdown__panel-body {
+  background-color: white !important;
+}
+
+.c-natural-language-form .c-natural-language-form__form-body__text-field {
+  height: 52px !important;
+}
+
+.nx-formfield.is-floating.has-outline .nx-formfield__input-container {
+  background-color: transparent;
+  font-size: 40px;
+  line-height: 48px;
+  height: 52px;
+  text-align: center;
+  border-width: 2px;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: #d9d9d9;
+  padding-bottom: 2px;
+  font-weight: 400;
+  letter-spacing: .3px;
+  color: black;
+}
+
+.nx-dropdown-results__option-label:hover {
+  background-color: red;
+}
+
+.nx-dropdown__panel-body div:hover {
+  background-color: var(--text-01);
+  color: rgb(5, 5, 5) !important;
+}
+
+.nx-dropdown-results__option-label {
+  color: black !important;
+}
+
+.nx-dropdown-results__option-label :hover {
+  color: rgb(2, 2, 2) !important;
+}
+
+.nx-dropdown__rendered span {
+  color: black !important;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.nx-formfield__input-container:hover .nx-dropdown__rendered span {
+  color: var(--main-color) !important;
+}
+
+.nx-dropdown__container:focus {
+  border: none !important;
+}
+
+.nx-formfield.has-outline .nx-formfield__input-container {
+  border-radius: unset !important;
+}
+
+.nx-dropdown__panel-header {
+  background-color: #e7e7e7 !important;
+  color: black !important;
+}
+
+.nx-formfield__label {
+  color: black !important;
+}
+
+.nx-formfield__wrapper {
+  padding: 0px 0px !important;
+  width: 100%;
+  border: 1px;
+}
+
+.nx-formfield.is-focused:not(.nx-formfield--negative):not(.has-error) {
+  color: black !important;
+}
+
+
+.nx-formfield__input-container {
+  border-bottom: 2px solid #d9d9d9 !important;
+}
+
+.nicname:hover .nx-formfield__input-container {
+  border-bottom: 2px solid var(--main-color) !important;
+}
+
+.nx-formfield__flexfield {
+  line-height: 31px;
+}
+
+.nx-dropdown__panel-header {
+  text-align: center !important;
+}
+
+.nx-dropdown__panel-body div:hover {
+  color: #ffffff !important;
+}
+
+.nx-dropdown__panel-body div:hover .nx-dropdown-results__option-label {
+  color: white !important;
+}
+
+.nx-dropdown-results__option-label :hover {
+  color: white !important;
+}
+
+.nx-icon--auto svg {
+  fill: black !important;
+}
+
+.nx-datepicker-header {
+  background: #ffffff !important;
+}
+
+.nx-datepicker-content {
+  background: #ffffff !important;
+}
+
+.nx-calendar-body-cell-content {
+  color: #000000 !important;
+}
+
+.nx-calendar-body-cell:hover .nx-calendar-body-cell-content.nx-calendar-body-today {
+  background-color: #ececec !important;
+  color: var(--main-color) !important;
+}
+
+.nx-calendar-body-cell .nx-calendar-body-cell-content.nx-calendar-body-today {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+
+.nx-calendar-body-cell-content:hover,
+.nx-calendar-body-cell:hover .nx-calendar-body-cell-content {
+  background-color: #ececec !important;
+  color: var(--main-color) !important;
+}
+
+.nx-calendar-adjacent-cell:hover .nx-calendar-adjacent-cell-content {
+  background-color: transparent !important;
+  color: #000000 !important;
+}
+
+.nx-calendar-body-cell-content.nx-calendar-body-today,
+.nx-calendar-body-cell-content.nx-calendar-body-selected {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+
+
+
+.nx-calendar-period-label {
+  color: #000 !important;
+}
+
+.nx-calendar-change-view-button,
+.nx-calendar-next-button,
+.nx-calendar-previous-button,
+.nx-datepicker-close {
+  color: var(--text-01) !important;
+}
+
+
+
+.c-progress-bar .c-progress-bar--steps .c-progress-bar__item:after {
+  left: 49%;
+  right: 47%;
+}
+
+.nx-button--primary.nx-button--negative {
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+  color: white !important;
+}
+
+.nx-button--primary.nx-button--negative:hover {
+  background-color: #075994 !important;
+  border-color: #075994 !important;
+}
+
+.nx-dropdown-results__option-checkicon .nx-icon--auto {
+  display: none !important;
+}
+
+.nx-dropdown__icon {
+  color: var(--text-color) !important;
+}
+
+
+
+.nx-dropdown__chevron.nx-icon--auto svg {
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+
+
+
+.c-textfield.nx-formfield--type-nx-dropdown.nx-formfield:hover .nx-dropdown__icon {
+  color: var(--text-01) !important;
+}
+
+.c-textfield.nx-formfield--type-nx-dropdown.nx-formfield:hover .nx-formfield__input-container {
+  border-bottom: 2px solid var(--main-color) !important;
+}
+
+
+.c-teaser-with-bg {
+  position: relative;
+  min-height: 450px;
+}
+
+.c-carousel--fixed-height {
+  height: unset;
+}
+
+.c-input-new {
+  margin-bottom: -2px !important;
+  font-size: 25px !important;
+}
+
+.c-select-new {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 25px !important;
+}
+
+
+.cdk-overlay-pane {
+  justify-content: center;
+}
+
+.cdk-global-overlay-wrapper {
+  align-items: start !important;
+  margin-top: 30px;
+}
+
+[dir=rtl] .nx-formfield__input-edit .nx-formfield__input {
+  text-align: left !important;
+  direction: ltr;
+}
+
+.c-sticky-sidebarss {
+  right: unset;
+  left: 20px;
+}
+
+/* //////////////////////////////////////////////////// */
+
+@media (max-width: 703px) {
+  .c-natural-language-form .c-natural-language-form__form-body__selector .c-select__selection--rendered {
+    font-size: 19px !important;
+    line-height: 32px;
+    color: var(--text-01);
+    border-color: var(--main-color);
+  }
+
+
+  .nx-dropdown__rendered span {
+    font-size: 19px !important;
+    line-height: 32px;
+    color: var(--text-01) !important;
+    border-color: var(--main-color);
+  }
+
+  .c-natural-language-form .c-natural-language-form__form-body__selector--active .c-select__selection {
+    color: var(--text-01);
+    border-color: var(--main-color);
+  }
+}
+
+@media (max-width: 703px) {
+  .c-natural-language-form .c-natural-language-form__form-body__text-field .c-textinput__field {
+    font-size: 26px;
+    line-height: 32px;
+    height: 36px;
+  }
+}

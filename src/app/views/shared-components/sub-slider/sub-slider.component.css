@@ -1,0 +1,23 @@
+.imageSubSlide {
+  height: 250px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textSubSlide {
+  font-size: 22px;
+  padding-top: 16px;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width:767px) {
+  .imageSubSlide {
+    height: 400px;
+  }
+
+  .textSubSlide {
+    font-size: 32px;
+  }
+}

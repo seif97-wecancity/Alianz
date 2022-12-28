@@ -1,0 +1,6 @@
+.iconRelative {
+  padding: 7px 12px 5px;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  margin: auto;
+}
